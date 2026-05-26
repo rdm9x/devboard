@@ -25,7 +25,7 @@ _MD = "managing-director"
 
 def test_add_happy_path(db_path: Path) -> None:
     res = tools.manager_memory_add(
-        text="Owner — Дмитрий Рудич, директор ПРАЙД.",
+        text="Owner — owner Рудич, директор Acme.",
         source="note",
         tags=["owner", "company"],
         caller_role=_MD,
